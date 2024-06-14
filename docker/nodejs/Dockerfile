@@ -1,0 +1,4 @@
+FROM node
+WORKDIR /src
+ENV TZ=Asia/Tokyo
+EXPOSE 3000
