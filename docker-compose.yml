@@ -7,7 +7,7 @@ services:
       dockerfile: docker/nodejs/Dockerfile
     volumes:
       - ./frontend:/src # ローカルをコンテナ内にマウント
-    command: sh -c "cd react-project && yarn start" #コンテナを立ち上げたときに自動的にbuildする
+    command: sh -c "cd react-project && npm start" #コンテナを立ち上げたときに自動的にbuildする
  
   nginx:
     image: nginx
