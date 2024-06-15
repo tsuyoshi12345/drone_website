@@ -10,6 +10,8 @@ docker compose run --rm frontend sh -c "cd /src/react-project && npm run build"
 docker-compose up　-d
 
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+ページの更新
+#サイトの動作確認はコードを保存して、ページをリロードする
 
 開発中に使うコマンド
 
@@ -19,10 +21,13 @@ docker-compose stop
 #コンテナ立ち上げ
 docker-compose up　-d
 
-#ウェブアプリの更新
-docker compose run --rm frontend sh -c "cd /src/react-project && yarn build"
-
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+サイトが完成した時に使う
+
+#本番環境の更新
+docker compose run --rm frontend sh -c "cd /src/react-project && npm run build"
+
+
 
 参考文献
 ディレクトリ構成
