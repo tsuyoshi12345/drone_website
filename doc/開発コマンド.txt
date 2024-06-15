@@ -2,12 +2,12 @@
 
 #コンテナ作成
 docker-compose build
-#reactのプロジェクトを作成
+#reactに必要なパッケージをインストール
 docker-compose run --rm frontend sh -c "cd react-project && npm install"
 #reactのアプリをビルド
 docker compose run --rm frontend sh -c "cd /src/react-project && npm run build"
 #コンテナ立ち上げ
-docker-compose up　-d
+docker-compose up -d 
 
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 ページの更新
@@ -19,7 +19,7 @@ docker-compose up　-d
 docker-compose stop
 
 #コンテナ立ち上げ
-docker-compose up　-d
+docker-compose up -d
 
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 サイトが完成した時に使う
