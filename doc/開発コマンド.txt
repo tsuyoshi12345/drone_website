@@ -3,7 +3,7 @@
 #コンテナ作成
 docker-compose build
 #reactのプロジェクトを作成
-docker-compose run --rm frontend sh -c "cd react-project && yarn"
+docker-compose run --rm frontend sh -c "cd react-project && npm install"
 #reactのアプリをビルド
 docker compose run --rm frontend sh -c "cd /src/react-project && npm run build"
 #コンテナ立ち上げ
