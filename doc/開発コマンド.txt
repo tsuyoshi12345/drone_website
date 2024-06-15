@@ -19,7 +19,7 @@ docker-compose up -d
 docker-compose stop
 
 #コンテナ立ち上げ
-docker-compose up　-d
+docker-compose up -d
 
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 サイトが完成した時に使う
